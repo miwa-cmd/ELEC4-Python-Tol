@@ -15,5 +15,14 @@ def get_valid_grade():
             print("Invalid input. Please enter a numeric value.")
 
 
-result = get_valid_grade()
-print("You entered:", result)
+def compute_average(grades):
+    return sum(grades) / len(grades)
+
+
+def get_highest(grades):
+    return max(grades)
+
+
+def get_lowest(grades):
+    return min(grades)
+
