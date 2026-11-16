@@ -81,3 +81,9 @@ def main():
 
 
 main()
+
+# Local vs Global Variable:
+# A local variable is made inside a function and can only be used there, like
+# grades and average inside main(). A global variable is made outside all functions
+# and can be used anywhere. My program has no global variables because I pass
+# grades to each function as a parameter.
