@@ -33,6 +33,51 @@ def get_status(average):
     else:
         return "FAILED"
 
-print(get_status(80))
-print(get_status(74.9))
-print(get_status(75))
+
+def main():
+    grades = []
+
+    while True:
+        print("\n=== Student Grade Calculator - Mark Neilson Tol ===")
+        print("1. Enter grades")
+        print("2. View results")
+        print("3. Exit")
+
+        choice = input("Choose an option (1-3): ")
+
+        if choice == "1":
+            grades = []
+            while True:
+                try:
+                    count = int(input("How many grades do you want to enter? "))
+                    if count > 0:
+                        break
+                    else:
+                        print("Please enter a number greater than 0.")
+                except ValueError:
+                    print("Invalid input. Please enter a whole number.")
+
+            for i in range(count):
+                print(f"Grade {i + 1} of {count}")
+                grades.append(get_valid_grade())
+            print("Grades saved.")
+
+        elif choice == "2":
+            if len(grades) == 0:
+                print("No grades yet. Choose option 1 first.")
+            else:
+                average = compute_average(grades)
+                print(f"\nGrades: {grades}")
+                print(f"Average: {average:.2f}")
+                print(f"Highest: {get_highest(grades)}")
+                print(f"Lowest: {get_lowest(grades)}")
+                print(f"Status: {get_status(average)}")
+
+        elif choice == "3":
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please enter 1, 2, or 3.")
+
+
+main()
