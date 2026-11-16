@@ -26,3 +26,13 @@ def get_highest(grades):
 def get_lowest(grades):
     return min(grades)
 
+
+def get_status(average):
+    if average >= 75:
+        return "PASSED"
+    else:
+        return "FAILED"
+
+print(get_status(80))
+print(get_status(74.9))
+print(get_status(75))
