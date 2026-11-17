@@ -1,0 +1,6 @@
+2026-001|Nichelle Dela Cruz|BSIT-4C|95.0
+2026-002|Jit Lee Romero|BSIT-4C|96.0
+2026-003|Jim Mark Montermayor|BSCS-4A|85.0
+2026-004|Christian Abalos|BSIT-4B|92.0
+2026-005|Neil James Correa|BSIT-4C|87.0
+2026-006|Test student|BSIT-4C|80.0
